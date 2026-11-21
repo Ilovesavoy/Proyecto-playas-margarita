@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio - Playas Margarita</title>
+</head>
+<body>
+    <h1>Bienvenido {{ user.username }}</h1>
+    <p>Proyecto: Playas de Margarita</p>
+    <p>Cédula: [Tu Cédula]</p>
+    <a href="{% url 'lista_playas' %}">Ver Playas</a>
+    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+</body>
+</html>

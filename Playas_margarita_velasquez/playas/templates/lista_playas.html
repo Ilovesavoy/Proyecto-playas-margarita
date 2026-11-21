@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playas - Margarita</title>
+</head>
+<body>
+    <h1>Playas Disponibles</h1>
+    <a href="{% url 'logout' %}">Cerrar Sesión</a>
+    <ul>
+        {% for playa in playas %}
+        <li>{{ playa.nombre }} - {{ playa.ubicacion }}</li>
+        {% empty %}
+        <li>No hay playas registradas</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
